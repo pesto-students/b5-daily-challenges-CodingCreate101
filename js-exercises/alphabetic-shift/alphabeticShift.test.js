@@ -16,9 +16,7 @@ describe('Alphabetic Shift Test Cases', () => {
       'Gmpddjobvdjojijmjqjmjgjdbujpo'
     );
 
-    expect(alphabeticShift('Antidisestablishmentarianism')).toEqual(
-      'Boujejtftubcmjtinfoubsjbojtn'
-    );
+    expect(alphabeticShift('Antidisestablishmentarianism')).toEqual('Boujejtftubcmjtinfoubsjbojtn');
 
     expect(alphabeticShift('supercalifragilisticexpialidocious')).toEqual(
       'tvqfsdbmjgsbhjmjtujdfyqjbmjepdjpvt'

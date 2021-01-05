@@ -8,17 +8,24 @@ function alphabeticShift(str) {
 
 //* Following code is applicable if chars need to be cycled, example Z -> A,
 //* i.e, if input string has char `Z`, it shifts to A, instead of `[`
+
+// function getShiftedCharOf(char) {
+//   const ASCII = char.charCodeAt(0);
+
+//   const isCurrentCharZ = ASCII === 90 || ASCII === 122;
+
+//   if (isCurrentCharZ) {
+//     // Shift Z -> A || z -> a
+//     return String.fromCharCode(ASCII - 25);
+//   }
+
+//   return String.fromCharCode(ASCII + 1);
+// }
+
 // function alphabeticShift(str) {
 //   let shiftedString = '';
-//   for (const char of str) {
-//     const ASCIIofCurrentChar = char.charCodeAt(0);
-
-//     const isCurrentCharZ = ASCIIofCurrentChar === 90 || ASCIIofCurrentChar === 122;
-//     const ASCIItoShift = isCurrentCharZ
-//       ? ASCIIofCurrentChar - 25
-//       : ASCIIofCurrentChar + 1;
-
-//     shiftedString += String.fromCharCode(ASCIItoShift);
+//   for (const currentChar of str) {
+//     shiftedString += getShiftedCharOf(currentChar);
 //   }
 //   return shiftedString;
 // }
