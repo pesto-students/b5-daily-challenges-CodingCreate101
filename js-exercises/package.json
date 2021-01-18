@@ -5,7 +5,8 @@
   "license": "MIT",
   "scripts": {
     "test": "jest",
-    "tdd": "jest --watch"
+    "tdd": "jest --watch",
+    "download": "cd .. && npm run download"
   },
   "devDependencies": {
     "@babel/cli": "^7.11.6",
